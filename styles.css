@@ -3,6 +3,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
+    margin: 0; /* Add margin reset */
+    padding: 0; /* Add padding reset */
 }
 
 /* Navigation Styles */
@@ -10,17 +12,26 @@ header {
     background-color: #007bff; /* Primary color */
     color: white;
     padding: 10px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
 }
 
 header a {
     color: white;
     text-decoration: none;
+    transition: color 0.2s ease; /* Add transition effect */
+}
+
+header a:hover {
+    color: #ccc; /* Add hover effect */
 }
 
 /* Event Section Styles */
 #events {
     padding: 20px;
     text-align: center;
+    background-color: #fff; /* Add background color */
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
 }
 
 .event-details {
@@ -33,6 +44,10 @@ form {
     flex-direction: column;
     max-width: 400px;
     margin: auto;
+    padding: 20px; /* Add padding */
+    background-color: #fff; /* Add background color */
+    border-radius: 10px; /* Add border radius */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add box shadow */
 }
 
 form label {
@@ -54,6 +69,7 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.2s ease; /* Add transition effect */
 }
 
 button:hover {
@@ -68,5 +84,9 @@ button:hover {
 
     header {
         padding: 5px 0;
+    }
+
+    form {
+        padding: 10px; /* Adjust padding for smaller screens */
     }
 }
