@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Event Submission</title>
+    <meta name="description" content="Login to submit events and manage your participation in the Annual Colour Festival.">
+    <link rel="stylesheet" href="styles.css"> <!-- Assuming there's a CSS file for styling -->
+</head>
+<body>
+    <header>
+        <h1>Login</h1>
+        <form id="loginForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <button type="submit">Login</button>
+        </form>
+    </header>
+    
+    <main>
+        <div id="eventSubmission" style="display:none;">
+            <h2>Submit an Event</h2>
+            <form id="submitEventForm">
+                <label for="eventName">Event Name:</label>
+                <input type="text" id="eventName" name="eventName" required>
+                
+                <label for="eventDate">Event Date:</label>
+                <input type="date" id="eventDate" name="eventDate" required>
+                
+                <button type="submit">Submit Event</button>
+            </form>
+        </div>
+    </main>
+
+    <script>
+        // Check if the user is logged in
+        const isLoggedIn = localStorage.getItem('isLoggedIn'); // Assuming a simple flag in local storage
+        if (!isLoggedIn) {
+            alert('You need to log in to submit events.');
+            // Optionally redirect to the login page
+            window.location.href = 'organizers.html'; // Redirect to login page
+        } else {
+            document.getElementById('eventSubmission').style.display = 'block'; // Show event submission form
+        }
+    </script>
+</body>
+</html>

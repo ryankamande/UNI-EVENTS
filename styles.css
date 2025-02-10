@@ -1,0 +1,72 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navigation Styles */
+header {
+    background-color: #007bff; /* Primary color */
+    color: white;
+    padding: 10px 0;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Event Section Styles */
+#events {
+    padding: 20px;
+    text-align: center;
+}
+
+.event-details {
+    margin-top: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: auto;
+}
+
+form label {
+    margin-bottom: 5px;
+}
+
+form input {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Button Styles */
+button {
+    background-color: #28a745; /* Success color */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 5px 0;
+    }
+}

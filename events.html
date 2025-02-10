@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <meta name="description" content="Join us for the Annual Colour Festival, a vibrant event for university students in Langata, Nairobi.">
+</head>
+<body>
+    <section id="events" class="hero d-flex align-items-center">
+        <img src="screen.png" alt="Colour Festival" data-aos="fade-in" class="">
+        <div class="container d-flex flex-column align-items-center text-center mt-auto">
+            <h2 data-aos="fade-up" data-aos-delay="100" class="">THE ANNUAL<br><span>COLOUR</span> FESTIVAL</h2>
+            <p data-aos="fade-up" data-aos-delay="200">11-13 April, Langata, Nairobi</p>
+            <div data-aos="fade-up" data-aos-delay="300" class="">
+                <a href="https://youtu.be/2kByMWBJGyE?si=LKW7C-fHj042yFzX" class="glightbox pulsating-play-btn mt-3"></a>
+            </div>
+        </div>
+        <div class="event-details">
+            <h3>Event Details</h3>
+            <p>Join us for a weekend of fun, networking, and entertainment. Don't miss out!</p>
+        </div>
+    </section>
+    <script>
+        // Check if the user is logged in
+        const isLoggedIn = localStorage.getItem('isLoggedIn'); // Assuming a simple flag in local storage
+        if (!isLoggedIn) {
+            alert('You need to log in to submit events.');
+            // Optionally redirect to the login page
+            window.location.href = 'organizers.html'; // Redirect to login page
+        }
+    </script>
+</body>
+</html>
