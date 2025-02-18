@@ -1,32 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Episode Events</title>
-  <meta name="description" content="Join us for exciting events organized by Episode Events, where university students can connect and socialize.">
-  <meta name="keywords" content="events, university, social, networking, Episode Events">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="icon" href="img/favicon_io/favicon.ico" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketing Conference</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
-<body class="index-page">
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">
+            <i class="fas fa-map-marker-alt"></i>
+            TheEvent
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Events</a></li>
+                <li class="dropdown">
+                    <a href="#">Venues <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Option 1</a></li>
+                        <li><a href="#">Option 2</a></li>
+                        <li><a href="#">Option 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="btn">Login</button>
+    </header>
 
-  <header id="header" class="header">
-    <div class="container">
-      <a href="index.html" class="logo">
-        <img src="img/logo.png" alt="Episode Events Logo">
-      </a>
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="" class="active">Home</a></li>
-          <li><a href="events.html">Events</a></li>
-          <li><a href="about.html">About us</a></li>
-          <li><a href="support.html">Support</a></li>
-          <li><a href="organizers.html" class="btn-login">Login</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1>THE ANNUAL<br><span>UNIVERSITIES</span> CONFERENCE</h1>
+            <p>10-12 December, CATHOLIC UNIVERSITY KAREN, Nairobi</p>
+            <div class="play-button">
+                <i class="fas fa-play"></i>
+            </div>
+        </div>
+    </section>
 
+    <!-- About Section -->
+    <section class="about">
+        <div class="container">
+            <h2>About The Event</h2>
+            <p>
+                Sed nam ut dolor qui repellendus iusto odit. Possimus inventore eveniet accusamus 
+                error amet eius aut accusantium et. Non odit consequatur repudiandae sequi ea odio 
+                molestiae. Enim possimus sunt inventore in est ut optio sequi unde.
+            </p>
+            <div class="info">
+                <div class="box">
+                    <h3>WHERE</h3>
+                    <p>Downtown Conference Center, New York</p>
+                </div>
+                <div class="box">
+                    <h3>WHEN</h3>
+                    <p>Monday to Wednesday<br>10-12 December</p>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
-</html></div>
+</html>
