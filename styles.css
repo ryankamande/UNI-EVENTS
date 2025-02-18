@@ -2,10 +2,11 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #F5F5F5; /* Wild Sand */
 }
 .header {
-  background-color: #004080; /* Dark blue */
-  color: #f5f5f5;
+  background-color: #1B1B1B; /* Cod Gray */
+  color: #F5F5F5; /* Wild Sand */
   padding: 10px 0;
   position: fixed;
   width: 100%;
@@ -20,8 +21,15 @@ body {
   align-items: center;
 }
 .logo img {
-  height: 0px;
+  height: 50px;
   margin-right: 10px;
+}
+.logo span {
+  font-size: 20px;
+  color: #FF4F00; /* International Orange */
+  font-weight: bold;
+  margin-left: 10px;
+  vertical-align: middle;
 }
 .navmenu ul {
   list-style: none;
@@ -33,14 +41,25 @@ body {
   margin: 0 10px;
 }
 .navmenu ul li a {
-  color: #fff;
+  color: #F5F5F5; /* Wild Sand */
   text-decoration: none;
   padding: 5px 10px;
-  transition: background-color 0.3s, transform 0.3s;
+  transition: color 0.3s, border-bottom 0.3s;
+  border-bottom: 2px solid transparent;
 }
 .navmenu ul li a:hover,
 .navmenu ul li a.active {
-  background-color: #0066cc; /* Lighter blue */
+  color: #FF4F00; /* International Orange */
+  border-bottom: 2px solid #FF4F00; /* International Orange */
+}
+.btn-login {
+  background-color: #FF4F00; /* International Orange */
+  color: #F5F5F5; /* Wild Sand */
+  padding: 5px 10px;
   border-radius: 5px;
-  transform: scale(1.1);
+  transition: background-color 0.3s, color 0.3s;
+}
+.btn-login:hover {
+  background-color: #7e2f0a; /* Atomic Tangerine */
+  color: #fff;
 }
